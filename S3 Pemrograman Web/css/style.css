@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid black;*/    
+    box-sizing: border-box;
+}
+body {
+    /*background: linear-gradient(to right, white, lightblue, grey);*/
+    background-image: url("../img/bg/bg.jpg");
+}
+div#all {
+    /* position: absolute; */
+    display: block;
+    width: 100%;
+    min-height: 700px;
+    height: 100%;
+    background: rgba(163, 163, 163, 0.278);
+}
+header {
+    margin: 0 0 50px;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+header #kepala #logo-gambar {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+header #kepala #logo-text {
+    display: inline-block;
+    font-size: 45px;
+    font-family: sans-serif;
+    /*margin-top: -20px;*/
+    -webkit-text-stroke: 1px white;
+    cursor: pointer;
+}
+header #kepala hr {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to left, brown, black, brown);
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+nav {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    width: 210px;
+    height: 25px;
+}
+nav * {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    color: white;
+    text-align: right;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+nav #akun span{
+    width: 200px;
+    text-align: left;
+}
+nav #akun{
+    display: none;
+    position: absolute;
+    top: 0;
+}
+nav #keluar {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+div.admin {
+    position: absolute;
+    right: 42%;
+    top: 80%;
+    width: 210px;
+    height: 100px;
+}
+div.admin *{
+    display: block;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+nav span {
+    cursor: pointer;
+}
+article {
+    text-align: center;
+    margin-bottom: 30px;
+}
+article table tr td {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 15px 30px;
+    border-radius: 125%;
+    background:   rgba(163, 163, 163, 0.478);
+    /*border: 1px solid black;*/
+}
+article #konten #fakultas div.fk {
+    position: relative;
+    top: 11.5px;
+    left: 11.5px;
+    width: 125px;
+    height: 125px;
+    /*border: 10px solid rgb(248, 248, 61);*/
+    border-radius: 100%;
+    background:  rgba(163, 163, 163, 0.478);
+}
+footer #copyright {
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+header div#kepala a{
+    text-decoration: none;
+    color: black;
+    -webkit-text-stroke: 1px white;
+}

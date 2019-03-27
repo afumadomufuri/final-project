@@ -1,0 +1,45 @@
+article #konten #fakultas div.fk:hover {
+    transition: 1.25s;
+}
+article #konten #fakultas div#fahutan:hover {
+    background-color: rgba(97, 97, 97);
+}
+article #konten #fakultas div#faperta:hover {
+    background-color: rgba(40, 158, 0);
+}
+article #konten #fakultas div#farmasi:hover {
+    background-color: rgba(254, 221, 98);
+}
+article #konten #fakultas div#feb:hover {
+    background-color: rgba(255, 233, 33);
+}
+article #konten #fakultas div#hukum:hover {
+    background-color: rgba(255, 0, 0);
+}
+article #konten #fakultas div#fpik:hover {
+    background-color: rgba(0, 230, 199);
+}
+article #konten #fakultas div#fisipol:hover {
+    background-color: rgba(0, 34, 255);
+}
+article #konten #fakultas div#fk:hover {
+    background-color: rgba(145, 220, 90);
+}
+article #konten #fakultas div#kesmas:hover {
+    background-color: rgba(121, 0, 191);
+}
+article #konten #fakultas div#fkip:hover {
+    background-color: rgba(0, 108, 239);
+}
+article #konten #fakultas div#fkti:hover {
+    background-color: rgba(184, 0, 33);
+}
+article #konten #fakultas div#mipa:hover {
+    background-color: rgba(221, 107, 0);
+}
+article #konten #fakultas div#teknik:hover {
+    background-color: rgba(255, 132, 0);
+}
+article #konten #fakultas div#fib:hover {
+    background-color: rgba(255, 255, 255);
+}

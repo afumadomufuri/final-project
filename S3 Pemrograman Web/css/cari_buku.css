@@ -1,0 +1,19 @@
+#cari_buku, #hasil_cari {
+    display: none;
+}
+
+article #cari_buku input[type=text] {
+    width: 300px;
+    height: 40px;
+    font-size: 16pt;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+article #cari_buku input[type=button] {
+    height: 51px;
+    width: 60px;
+    font-size: 14pt;
+    border: none;
+}

@@ -1,0 +1,63 @@
+.regis {
+	position: relative;
+	margin: 0 auto;
+	padding: 20px 30px;
+	background-color: rgba(169,169,169,0.8);
+	width: 500px;
+	border-radius: 50px;
+}
+.login {
+	height: 420px;
+	padding: 15px 40px;
+	width: 400px;
+}
+div.regis.login tr td{
+	text-align: center;
+	padding: 10px;
+}
+.regis table tr td {
+	padding: 5px;
+}
+#kepala a {
+	text-decoration: none;
+	color: black;
+	-webkit-text-stroke: 1px white;
+}
+
+table a {
+	text-decoration: none;
+	color: black;
+	/* -webkit-text-stroke: 1px white; */
+}
+
+select {
+	border: none;
+	padding: 5px 10px;
+	height: 35px;
+	font-size: 12pt;
+	width: 320px;
+}
+
+input {
+	display: inline-block;
+	padding: 5px 10px;
+	height: 35px;
+	width: 300px;
+	border: none;
+	font-size: 14pt;
+	background-color: rgba(255, 255, 255, 0.918);
+}	
+input[type=submit], input[type=reset], input[type=button] {
+	border-radius: 10px;
+}
+.regis table tr td#head {
+	text-align: center;
+	font-size: 24pt;
+}
+
+textarea {
+	height: 59px;
+	width: 279px;
+	padding: 20px;
+	font-size: 12pt;
+}

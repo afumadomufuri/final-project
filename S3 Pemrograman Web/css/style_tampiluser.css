@@ -1,0 +1,38 @@
+.tampilan {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.tampilan table *{
+    font-size: 14pt;
+    border: none;
+    /* border: 1px white solid; */
+    /* border-left: 1px black solid;
+    
+    border-right: 1px black solid; */
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.36);
+    color: rgba(224, 213, 213, 0.918);
+}
+
+.tampilan table tr th#head {
+    font-size: 26pt;
+}
+
+.tampilan table tr a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.tampilan table tr a:hover {
+    color: salmon;
+    text-decoration: none;
+}
+
+.tampilan table tr td img {
+    height: 80px;
+    width: 80px;
+    padding: 0;
+}

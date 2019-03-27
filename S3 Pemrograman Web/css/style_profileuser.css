@@ -1,0 +1,54 @@
+table tr {
+    /* background-color: rgba(161, 158, 158, 0.5); */
+    font-size: 16pt;
+
+}
+
+hr {
+    background-color: rgba(0, 0, 0, 0.651);
+    border: 1px rgba(0, 0, 0, 0.651) solid;
+}
+
+table tr td , table tr th{
+    padding: 5px 10px;
+    text-align: center;
+}
+
+th {
+    font-size: 24pt;
+}
+
+table tr td img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+#foto {
+    position: absolute;
+    left: 28.3%;
+    top: 13.5%;
+    background-color: rgba(128, 128, 128, 1.548);
+    height: 200px;
+    width: 200px;
+    border: 20px black solid;
+    border-radius: 100%;
+}
+.profil {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.548);
+    border-radius: 30px;
+}
+
+table tr td a:hover {
+    color: whitesmoke;
+    text-decoration: underline ;
+}
+
+table tr td a {
+    color: black;
+    text-decoration: none;
+    font-size: 20pt;
+}
