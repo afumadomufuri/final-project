@@ -1,0 +1,76 @@
+Nama	  : Ahmad Mufli Hasan
+NIM	  : 1715015003
+Kelompok  : A6
+
+1.
+create view banyak_data_alumni as
+select count(nim), prodi.nama_prodi from alumni 
+join alumni_prodi using(nim)
+join prodi using(kd_prodi)
+where tahun_masuk > 2007 group by prodi.nama_prodi;
+
+2.
+create procedure prodi_per_fakultas(in id_fak char(5), out jumlah int(5))
+begin
+declare prodiplusempat int(5);
+declare nama varchar(50);
+select count(kd_prodi) into jumlah from prodi 
+join fakultas using(kd_fakultas)
+where kd_fakultas = id_fak;
+set prodiplusempat = jumlah + 4;
+select nama_fakultas into nama from fakultas
+where kd_fakultas = id_fak;
+select jumlah, prodiplusempat, nama;
+end
+
+3.
+create function jml_alumni(nama varchar(50))
+returns int
+deterministic
+begin
+declare total int(5);
+select count(nim) into total from alumni
+join alumni_prodi using(nim)
+join prodi using(kd_prodi)
+where nama_prodi = nama; 
+return(total);
+end
+
+4.
+create procedure ket_jml_prodi(in namaprodi varchar(50), 
+in tahun int(5), out keterangan varchar(50))
+begin
+declare jml int(5);
+declare thn int(5);
+set jml = jml_alumni(namaprodi);
+set thn = tahun;
+case
+when jml > 5 and thn > 2013 then set keterangan = 'prodi populer dan alumni muda';
+when jml > 3 and thn > 2013 then set keterangan = 'prodi kurang populer dan alumni muda';
+when jml >= 1 and thn > 2013 then set keterangan = 'prodi tidak populer dan alumni muda';
+when jml > 5 and thn < 2013 then set keterangan = 'prodi populer dan alumni tua';
+when jml > 3 and thn < 2013 then set keterangan = 'prodi kurang populer dan alumni tua';
+when jml >= 1 and thn < 2013 then set keterangan = 'prodi tidak populer dan alumni tua';
+else set keterangan = 'anda salah input';
+end case;
+select jml as alumni_per_prodi, thn as tahun_masuk, keterangan;
+end
+
+5.
+create table backup_alumni (
+nim varchar(10) primary key,
+nama_alumni varchar(50),
+alamat varchar(100),
+no_hp char(13),
+tahun_masuk int(4),
+waktu_hapus date
+);
+
+create trigger backup_alumni
+before delete
+on alumni
+for each row
+begin
+insert into backup_alumni 
+values(old.nim, old.nama_alumni, old.alamat, old.no_hp, old.tahun_masuk, sysdate());
+end

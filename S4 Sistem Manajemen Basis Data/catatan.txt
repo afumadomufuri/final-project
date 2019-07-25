@@ -1,0 +1,7 @@
+mahasiswa beasisa 1-m
+
+konsul pertama,
+	erd
+
+konsul kedua
+	record, perbaikan erd	
